@@ -1,0 +1,24 @@
+/*Write a cpp pogram to find number of setbits in a number
+  SetBits=Total number of 1's in a number(i.e is in binary form)
+  */
+#include <iostream>
+using namespace std;
+int main() 
+{
+int num,count=0;
+    cin>>num;
+    while(num)
+    {
+        if(num&1==1)
+        {
+            count++;
+        }
+        num=num>>1;
+    }
+    cout<<count;
+    return 0;
+}
+/* Output=
+5//num
+2//number of setbits
+*/
