@@ -1,0 +1,13 @@
+/*Write a cpp program to find an Efficient way to multiply with 7
+  We can multiply a number by 7 using bitwise operator. First left shift the number by 3 bits (you will get 8n) then subtract
+  the original numberfrom the shifted number and return the difference (8n – n). 
+  */
+#include <iostream>
+using namespace std;
+int main() {
+    int num,count1=0,res=0;
+    cin>>num;
+    res=num<<3;
+    cout<<(res-num);//prints 7*number efficiently
+    return 0;
+}
