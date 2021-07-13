@@ -1,0 +1,22 @@
+//Method 1
+#include<bits/stdc++.h>
+//unset the bit
+using namespace std;
+int main()
+{
+	int num,pos,result;
+	cin>>num>>pos;
+	result=num^((pos-1)<<1);
+	cout<<result;
+}
+//Method 2
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int num, pos;
+    cin>>num>>pos;
+    int x = 1<<pos-1;
+    cout<<(num|x)<<" "<<x;
+    return 0;
+}
