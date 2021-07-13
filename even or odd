@@ -1,0 +1,17 @@
+//write a cpp program to find even or odd in an efficient way
+/*
+    num&1==1 then odd
+    num&1==0 then even
+*/
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int num;
+    cin>>num;
+    if(num&1)
+      cout<<"Odd";
+    else
+        cout<<"Even";
+    return 0;
+}
